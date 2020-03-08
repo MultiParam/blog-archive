@@ -1,0 +1,119 @@
+/*
+ * 所有的卡片样式都在这里
+ *
+ * 卡片的通用样式在`mixins.styl`里
+ */
+
+// 卡片容器
+.card-container
+  margin: 0 auto
+  overflow: hidden
+
+// 文章列表卡片
+.card-container.card-articles
+  .article-title
+    font-weight: 700
+    line-height: 1.3
+    margin-bottom: 20px
+
+  .article-meta
+    line-height: 1.3
+  
+  .article-category
+      position: absolute
+      z-index: 2
+
+      .article-category-link
+        border-radius: 20px
+        padding: 4px 8px
+        transition: all 0.2s ease
+
+        &:hover
+          color: #000000
+          background-color: #ffffff
+
+
+// 文章导航卡片 分类列表样式 链接列表样式
+.card-container.card-article-nav,
+.card-container.card-categories,
+.card-container.card-links
+  .card-item article
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    strong
+      margin-bottom: 20px
+
+
+// desktop >=768
+@media screen and (min-width: 768px)
+  // 文章列表卡片
+  .card-container.card-articles
+    .article-title
+      font-size: font-desktop-focus
+    .article-meta
+      margin-bottom: 30px
+    .article-top
+     margin-top: 67px
+     line-height: 1.3
+    .article-category
+      bottom: 45px
+      left: 30px // 38 - 8
+
+  // 文章导航卡片 分类列表样式 链接列表样式
+  .card-container.card-article-nav,
+  .card-container.card-categories,
+  .card-container.card-links
+    font-size: font-desktop-commonly
+  
+  // 文章卡片
+  .card-container.card-articles
+    card(content-margin, 40px 38px 45px, 350px, 370px, 24px, 3)
+
+  // 分类卡片
+  .card-container.card-categories
+    card(content-margin, 40px 38px 45px, 250px, 110px, 24px, 4)
+
+  // 链接卡片
+  .card-container.card-links
+    card(content-margin, 20px 9px 20px, 200px, 120px, 12px, 5)
+
+  // 文章导航卡片
+  .card-container.card-article-nav
+    card(content-margin, 20px 38px 20px, auto, 110px, 24px, 2)
+
+// mobile 768<
+@media screen and (max-width: 767px)
+  // 文章列表卡片
+  .card-container.card-articles
+    .article-title
+      font-size: font-mobile-focus
+    .article-meta
+      margin-bottom: 40px
+    .article-category
+      bottom: 40px
+      left: 22px // 30 - 8
+
+  // 文章导航卡片 分类列表样式 链接列表样式
+  .card-container.card-article-nav,
+  .card-container.card-categories,
+  .card-container.card-links
+    font-size: font-mobile-commonly
+  
+  // 文章卡片
+  .card-container.card-articles
+    card(content-margin-min, 30px 30px 40px, 70vw, 200px, 24px, 1)
+  
+  // 分类卡片
+  .card-container.card-categories
+    card(content-margin-min, 30px 30px 40px, 70vw, 120px, 24px, 1)
+
+  // 链接卡片
+  .card-container.card-links
+    card(content-margin-min, 30px 30px 40px, 70vw, 120px, 24px, 1)
+
+  // 文章导航卡片
+  .card-container.card-article-nav
+    card(content-margin-min, 18px 20px 18px, auto, 90px, 12px, 1)

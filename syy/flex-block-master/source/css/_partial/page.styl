@@ -1,0 +1,74 @@
+// 其次的页面内容容器
+.main-container.next
+  min-height: auto
+
+// 文章列表样式
+.main-container.article-list
+  background-color: transparent
+
+
+// 文章内容样式
+.article-container
+  // 文章标签列表
+  .article-footer .article-tag-list
+    display: flex
+
+    a
+      display: block
+      color: #999999
+      margin-right: 10px
+
+      &:hover
+        color: #555555
+
+// 云标签样式
+.tags-cloud
+  text-align: center
+  
+  a
+    display: inline-block
+
+    &:hover
+      text-decoration: underline
+
+
+// desktop >=768
+@media screen and (min-width: 768px)
+  main-container-desktop()
+  
+  .article-container
+    .article-content
+      width: desktop-article-width
+      max-width: 100%
+      padding: desktop-banner-margin;
+      margin: auto
+      & > div:not(:first-child)
+        margin-top: 20px
+
+  .tags-cloud
+    font-size: font-desktop-commonly
+    a
+      margin: 0 20px
+      line-height: 2
+
+// mobile 768<
+@media screen and (max-width: 767px)
+  main-container-mobile()
+  
+  .article-container
+    .article-content
+      width: 100%
+      padding: mobile-banner-margin;
+      margin: auto
+      & > div:not(:first-child)
+        margin-top: 10px
+
+      .article-navs .article-nav-title
+        font-size: font-mobile-commonly
+  
+  .tags-cloud
+    font-size: font-mobile-commonly
+    a
+      margin: 0 8px
+      line-height: 1.3
+  
