@@ -5,9 +5,7 @@ tags:
 - 程序锅
 cover: https://img.dawnguo.cn/Others/contact/%E6%88%91%E6%98%AF%E7%A8%8B%E5%BA%8F%E9%94%85%E5%B0%81%E9%9D%A2.jpg
 ---
-<div align=life>
-<iframe frameborder="no" marginwidth="0" marginheight="0" width=600 height=80 src="http://dl.stream.qqmusic.qq.com/M5000037SCr72C2zmh.mp3?vkey=CD402144549023E24348C6AF4276ADD5B08BF95E8FD9C7B5AAFC3C8E41A2E1475368E6C7EBEFCEC71D888972374750ABF94F56815DDC2E38&guid=5953800360&fromtag=64&uin=858122573"></iframe>
-</div>
+
 
 ## 初次见面
 
