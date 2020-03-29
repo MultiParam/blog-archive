@@ -1,11 +1,10 @@
 ---
-title: Numpy的详尽教程
-date: 2018-12-09 1:46:01
+title: 一份 Numpy 小抄请查收
+date: 2020-03-27 1:46:01
 tags: 
-- python 
-- numpy
+- 程序锅 
 category:
-- python
+- AI
 ---
 
 numpy的主要对象是多维数组，**数组中元素是同一种的（通常是数字）。numpy中的数组对象叫做ndarray**，通常称为数组。

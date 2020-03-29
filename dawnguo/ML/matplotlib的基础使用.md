@@ -1,11 +1,10 @@
 ---
-title: Python第三方库matplotlib的入门使用
-date: 2018-12-10 23:39:12
+title: matplotlib 入门使用指南
+date: 2020-03-29 23:39:12
 tags:
-- python
-- matplotlib
+- 程序锅
 category:
-- python
+- AI
 ---
 
 ## 1. pyplot模块
