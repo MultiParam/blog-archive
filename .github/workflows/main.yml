@@ -24,6 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
+      uses: actions/checkout@master
       with:
         #endpoint: oss-cn-beijing.aliyuncs.com
         access-key-id: ${{ secrets.multiparam_blog }}
