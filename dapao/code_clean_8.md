@@ -348,9 +348,9 @@ questionConfig.nextQuestionId == -1
 
 你的大脑 |
 --|
-```questionConfig.nextQuestionId == -1``` |
-```not self:isEnd()```|
-```questionConfig.nextType == NEXT_TYPE.ANY or (isAnswerCorrect and questionConfig.nextType == NEXT_TYPE.RIGHT)``` |
+questionConfig.nextQuestionId == -1 |
+not self:isEnd()|
+questionConfig.nextType == NEXT_TYPE.ANY or (isAnswerCorrect and questionConfig.nextType == NEXT_TYPE.RIGHT) |
 
 但你发现，还有其他情况，你得将这些情况一个个出栈再入栈。一通操作后，如上所示的思维栈说不定又印象不深了。于是又要在读一遍，周而复始，套娃行为。
 
@@ -445,7 +445,7 @@ end
 
 * 条件语句参数的顺序，左变化，右固定。
 * if/else 的条件放置顺序大致有三个讲究，**简单先行，错误先抛，正先否后**。
-* ```do .. while```、```goto``` 还有三目运算符尽量少用。
+* 一些语句 ```do .. while```、```goto``` 还有三目运算符尽量少用。
 * 为减少代码嵌套的副作用，导致思维入栈，尽量使用 **提前 return** 的思想。
 
 好了，本篇炸鸡暂时到这里，谢谢各位的阅读，如果觉得本篇炸鸡不错的朋友，可以点个 **在看** 或者将此篇炸鸡 **转发给你的朋友**，谢谢各位的支持。
