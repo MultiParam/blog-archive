@@ -432,6 +432,27 @@ for _, kid in ipairs(kids) do
 end
 ```
 
+当然，如果实在不能通过如上方式来简化，判断逻辑就是如此复杂该怎么办呢？
+
+**封装成函数即可**
+
+```lua
+function isKidOk(kid)
+    if kid ~= SELF_KID or kid == 0 then return false end
+    if kid % 1000 ~= 0 then
+        return true
+    else
+        return false
+    end
+end
+
+for _, kid in ipairs(kids) do
+    -- lua 没有 continue，所以用这个词来模拟。
+    if not isKidOk(kid) then _continue
+    else ... end
+end
+```
+
 # 总结
 好了，说了这么多，也不知道多少人能看到这里，还是做一个小小的总结吧。
 
