@@ -349,7 +349,7 @@ if (GlodenSkyline * gloden_skyline = new GlodenSkyline(enemy) && enemy.hp <= glo
 
 ```
 
-```gloden_skyline``` 只存在于 ```if``` 的范围中。阅读者往下阅读的时候，就不会再去在意这个 ```gloden_skyline```。
+我们看到 ```gloden_skyline``` 只存在于 ```if``` 的范围中。阅读者往下阅读的时候，就不会再去在意这个 ```gloden_skyline```。
 
 ### 闭包
 接触脚本语言的朋友不会不晓得这个概念，利用闭包将一些变量的可见范围锁死在其中。
