@@ -1,0 +1,10 @@
+language: shell
+
+matrix:
+  include:
+    - os: linux
+      addons:
+        apt:
+          packages:
+            - gzip
+            - scp
