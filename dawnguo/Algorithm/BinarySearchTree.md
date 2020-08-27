@@ -13,6 +13,8 @@ category:
 
 大家好，我是多选参数的程序锅，一个正在”研究“操作系统、学数据结构和算法以及 Java 的疯狂猛补生。本篇将带来的是二叉查找树的相关知识，知识提纲如图所示。
 
+本篇相关的代码都可以从 https://github.com/DawnGuoDev/algorithm 获取，另外，该仓库除了包含了基础的数据结构和算法实现之外，还会有数据结构和算法的笔记、LeetCode 刷题记录（多种解法、Java 实现） 、一些优质书籍整理。
+
 ![](https://img.dawnguo.cn/Algorithm/二叉查找树.png)
 
 ## 1. 基本介绍
